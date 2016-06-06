@@ -7,48 +7,50 @@
     android:paddingLeft="@dimen/activity_horizontal_margin"
     android:paddingRight="@dimen/activity_horizontal_margin"
     android:paddingTop="@dimen/activity_vertical_margin"
-    tools:context="com.example.pc.qcm.MainActivity">
+    tools:context="com.example.pc.qcm.Register">
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:inputType="textPersonName"
-        android:text="Name"
-        android:ems="10"
-        android:id="@+id/etUsername"
+        android:id="@+id/etName"
         android:layout_alignParentTop="true"
+        android:text="username"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/etMail"
+        android:layout_below="@+id/etName"
+        android:text="email"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignParentRight="true"
-        android:layout_alignParentEnd="true" />
+        android:layout_alignRight="@+id/etName"
+        android:layout_alignEnd="@+id/etName" />
 
     <EditText
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:ems="10"
-        android:id="@+id/etPassword"
-        android:layout_below="@+id/etUsername"
+        android:id="@+id/etPass"
+        android:layout_below="@+id/etMail"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:layout_alignRight="@+id/etUsername"
-        android:layout_alignEnd="@+id/etUsername" />
+        android:layout_alignRight="@+id/etMail"
+        android:layout_alignEnd="@+id/etMail" />
 
     <Button
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:text="Login"
-        android:id="@+id/btLogin"
-        android:onClick="OnLogin"
-        android:layout_below="@+id/etPassword"
-        android:layout_centerHorizontal="true" />
-
-    <Button
+        style="?android:attr/buttonStyleSmall"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="register"
-        android:id="@+id/btregister"
-        android:layout_below="@+id/btLogin"
+        android:id="@+id/btRegister"
+        android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
-        android:onClick="openRegister"/>
+        android:onClick="OnRegister"/>
+
 </RelativeLayout>

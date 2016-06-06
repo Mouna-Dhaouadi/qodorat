@@ -1,5 +1,6 @@
 package com.example.pc.qcm;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.view.View;
@@ -20,5 +21,8 @@ public class MainActivity extends AppCompatActivity {
         String type="login";
         BackgroundWorker backgroundWorker =new BackgroundWorker(this);
         backgroundWorker.execute(type,username,password);
+    }
+    public  void openRegister(View view){
+        startActivity(new Intent(this,Register.class));
     }
 }
