@@ -23,6 +23,6 @@ public class MainActivity extends AppCompatActivity {
         backgroundWorker.execute(type,username,password);
     }
     public  void openRegister(View view){
-        startActivity(new Intent(this,Register.class));
+        startActivity(new Intent(this,Registration.class));
     }
 }
